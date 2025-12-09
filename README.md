@@ -18,7 +18,7 @@ Studiul teoretic, agenții AI (Greedy/Entropie) și scripturile care au generat 
 * **Validare în timp real:** Feedback vizual instant (Verde/Galben/Gri) conform regulilor oficiale Wordle.
 * **Tastatură Virtuală Interactivă:** Tastele își schimbă culoarea pe măsură ce jucătorul ghicește, pentru a ajuta la vizualizarea literelor disponibile.
 * **Animații Fluide:** Experiență de utilizare rafinată cu efecte vizuale la introducerea și verificarea literelor.
-* **Dicționar Extins:** Include aproape toate substantivele de 5 litere din limba română, oferind un grad ridicat de rejucabilitate.
+* **Dicționar Extins:** Include aproape toate substantivele de 5 litere din limba engleză (2309), oferind un grad ridicat de rejucabilitate.
 
 ## Tehnologii Utilizate
 
