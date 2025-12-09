@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# 🇷🇴 Wordle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Această aplicație este o recreare fidelă și optimizată a celebrului joc Wordle, dezvoltată folosind **React** și **TypeScript**.
 
-Currently, two official plugins are available:
+Proiectul a fost creat ca instrument practic pentru lucrarea de licență, având rolul de a valida strategiile de câștig generate de agenții inteligenți.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Conexiunea cu Licența (Backend & AI)
 
-## Expanding the ESLint configuration
+Acest joc nu este doar o interfață grafică. El se bazează pe datele și algoritmi complecși de analiză.
+Studiul teoretic, agenții AI (Greedy/Entropie) și scripturile care au generat baza de date de cuvinte se găsesc în repository-ul de cercetare:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**[Licență Wordle](https://github.com/rebecabaciu/licenta_wordle/))**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Funcționalități Cheie
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* **Validare în timp real:** Feedback vizual instant (Verde/Galben/Gri) conform regulilor oficiale Wordle.
+* **Tastatură Virtuală Interactivă:** Tastele își schimbă culoarea pe măsură ce jucătorul ghicește, pentru a ajuta la vizualizarea literelor disponibile.
+* **Animații Fluide:** Experiență de utilizare rafinată cu efecte vizuale la introducerea și verificarea literelor.
+* **Dicționar Extins:** Include aproape toate substantivele de 5 litere din limba română, oferind un grad ridicat de rejucabilitate.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tehnologii Utilizate
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+* **Frontend:** React 18
+* **Limbaj:** TypeScript (pentru siguranța tipurilor și prevenirea erorilor)
+* **Build Tool:** Vite (pentru performanță maximă)
+* **Styling:** CSS3 (Grid & Flexbox pentru așezarea tablei de joc)
+
+## Instrucțiuni de Instalare și Rulare
+
+1.  Clonează acest repository:
+    ```bash
+    git clone [https://github.com/rebecabaciu/wordle.git](https://github.com/rebecabaciu/wordle.git)
+    cd wordle
+    ```
+
+2.  Instalează dependențele:
+    ```bash
+    npm install
+    ```
+
+3.  Pornește aplicația local:
+    ```bash
+    npm run dev
+    ```
+    Jocul va fi disponibil în browser la adresa `http://localhost:5173`.
