@@ -4,6 +4,8 @@ Această aplicație este o recreare fidelă și optimizată a celebrului joc Wor
 
 Proiectul a fost creat ca instrument practic pentru lucrarea de licență, având rolul de a valida strategiile de câștig generate de agenții inteligenți.
 
+![](public/w1.png)
+
 ## Conexiunea cu Licența (Backend & AI)
 
 Acest joc nu este doar o interfață grafică. El se bazează pe datele și algoritmi complecși de analiză.
